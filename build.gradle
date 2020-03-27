@@ -9,6 +9,9 @@ repositories {
 	mavenLocal()        
 }
 
+description = 'OAuth for GWT'
+version = '1.4'
+
 dependencies {
 	compile ( "org.tuckey:urlrewritefilter:4.0.4")
 	compile ( "javax.servlet:servlet-api:2.4")
