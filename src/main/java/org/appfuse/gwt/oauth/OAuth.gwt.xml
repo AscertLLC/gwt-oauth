@@ -1,0 +1,28 @@
+<!DOCTYPE module PUBLIC "//gwt-module/"
+        "http://google-web-toolkit.googlecode.com/svn/tags/1.7.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="gwt.oauth">
+
+    <!-- Inherit the core Web Toolkit stuff. -->
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.google.gwt.http.HTTP"/>
+    <inherits name="com.google.gwt.json.JSON"/>
+
+    <!--  inherit css based theme -->
+    <inherits name="com.google.gwt.user.theme.standard.Standard"/>
+
+    <!-- Specify the app entry point class. -->
+    <entry-point class="org.appfuse.gwt.oauth.client.OAuth"/>
+
+    <!-- Specify the application specific style sheet. -->
+    <stylesheet src="OAuth.css"/>
+
+    <!-- OAuth JS API -->
+    <script src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"/>
+    <script src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"/>
+
+    <!-- Proxy Servlet -->
+    <servlet path="/twitter/" class="org.appfuse.gwt.servlet.AlternateHostProxyServlet"/>
+    <servlet path="/google/" class="org.appfuse.gwt.servlet.AlternateHostProxyServlet"/>
+    <servlet path="/contacts/" class="org.appfuse.gwt.servlet.AlternateHostProxyServlet"/>
+    <servlet path="/linkedin/" class="org.appfuse.gwt.servlet.AlternateHostProxyServlet"/>
+</module>

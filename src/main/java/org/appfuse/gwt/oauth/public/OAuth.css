@@ -1,0 +1,38 @@
+/** Add css rules here for your application. */
+body {
+    padding: 20px;
+    text-align: center;
+}
+
+.gwt-DialogBox {
+    top: 50px !important;
+}
+
+.oauth_example {
+    z-index: 20;
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.note {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.start_over {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.payload {
+    width: 98%;
+    height: 200px;
+    color: red;
+}
+
+.success {
+    color: green;
+}
