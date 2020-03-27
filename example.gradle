@@ -1,0 +1,26 @@
+
+plugins {
+    id "de.esoco.gwt" version "1.1.0"
+}
+
+repositories {
+	jcenter()
+	mavenCentral()
+	mavenLocal()        
+}
+
+dependencies {
+	compile ( "org.tuckey:urlrewritefilter:4.0.4")
+	//compile ( "javax.servlet:servlet-api:2.4")
+	compile ( "commons-httpclient:commons-httpclient:3.1") { transitive = false }	// requires a missing commons logging version: 1.0.4
+	compile ( "commons-fileupload:commons-fileupload:1.4")
+	compile ( "commons-io:commons-io:2.1.0")
+}
+
+
+gwt {
+    module 'org.appfuse.gwt.oauth.OAuth'
+	
+	/** Add the gwt-servlet lib */
+	gwtServletLib = false	
+}

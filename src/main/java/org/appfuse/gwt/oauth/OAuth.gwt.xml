@@ -17,8 +17,11 @@
     <stylesheet src="OAuth.css"/>
 
     <!-- OAuth JS API -->
+    <!-- These have moved. Found new links here, and downloaded them into public
+         Also, the xsiframe linker needs these to be in HTML now.
     <script src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"/>
     <script src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"/>
+    -->
 
     <!-- Proxy Servlet -->
     <servlet path="/twitter/" class="org.appfuse.gwt.servlet.AlternateHostProxyServlet"/>
