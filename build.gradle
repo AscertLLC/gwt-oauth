@@ -18,9 +18,26 @@ dependencies {
 	compile ( "commons-httpclient:commons-httpclient:3.1") { transitive = false }	// requires a missing commons logging version: 1.0.4
 	compile ( "commons-fileupload:commons-fileupload:1.4")
 	compile ( "commons-io:commons-io:2.1.0")
+    
+	// GWT Tests currently not support by the 'esoco' GWT plugin. A separate gradle file is included for running tests
+    testCompile ('com.google.gwt:gwt-user:2.8.2')	
+    testImplementation 'junit:junit:4.12'    
 }
 
 
 gwt {
     module 'org.appfuse.gwt.oauth.OAuth'
 }
+
+// GWT Tests currently not supported by the 'esoco' GWT plugin. A separate gradle file is included for running tests
+/*
+test {
+    useJUnit()
+
+    maxHeapSize = '1G'
+    
+    filter {
+        includeTestsMatching "*Gwt*"
+    }
+}
+*/

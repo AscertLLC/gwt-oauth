@@ -22,5 +22,17 @@ gwt {
     module 'org.appfuse.gwt.oauth.OAuth'
 	
 	/** Add the gwt-servlet lib */
-	gwtServletLib = false	
+	//gwtServletLib = true	
+	
+	jettyVersion = '9.4.27.v20200227'
+	
+	jetty {
+			/** interface to listen on. */
+			bindAddress = "127.0.0.1"	
+	}
+			
+	dev {
+			/** The ip address of the code server. */
+			bindAddress = "127.0.0.1"
+		}	
 }
